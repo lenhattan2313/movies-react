@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+
+$font-primary: "Poppins", sans-serif;
+$font-secondary: "Luckiest Guy", cursive;
+
+$color-primary: #fff;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-primary;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+ul {
+  text-transform: none;
+  list-style: none;
+}

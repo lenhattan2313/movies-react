@@ -1,14 +1,14 @@
 import React from "react";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import styled from "styled-components";
-Nav.propTypes = {};
+// Nav.propTypes = {};
 
 function Nav(props) {
   return (
     <NavBar className="navbar">
-      <a href="#" className="brand-navbar">
+      {/* <a href="#" className="brand-navbar">
         Rạp chiếu phim
-      </a>
+      </a> */}
     </NavBar>
   );
 }

@@ -5,15 +5,15 @@ export const fetchSlider = () => {
     type: sliderConstant.FETCH_SLIDER,
   };
 };
-export const fetchSliderSuccess = (payload) => {
+export const fetchSliderSuccess = (data) => {
   return {
     type: sliderConstant.FETCH_SLIDER_SUCCESS,
-    payload,
+    payload: data,
   };
 };
-export const fetchSliderFailure = (payload) => {
+export const fetchSliderFailure = (error) => {
   return {
     type: sliderConstant.FETCH_SLIDER_FAILURE,
-    payload,
+    payload: error,
   };
 };

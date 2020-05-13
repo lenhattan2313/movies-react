@@ -1,5 +1,8 @@
 import axios from "../services/axios";
-const url = "";
+import { API_KEY } from "../constant";
+// const url = "";
 export const fetchSliderAPI = () => {
-  return axios.get(url);
+  return axios.get(
+    `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=en-US&page=1`
+  );
 };

@@ -4,7 +4,8 @@ import SearchBox from "../../components/SearchBox";
 import { API_KEY } from "../../constant";
 import MovieList from "../../components/MovieList";
 import Pagination from "../../components/Pagination";
-import SliderHero from "../../components/SliderHero";
+import SliderHero from "../SliderHero";
+import Header from "../../components/Header";
 
 function App() {
   const [movies, setMovies] = useState([]);
@@ -46,8 +47,8 @@ function App() {
   const numberPage = Math.ceil(totalResult / 20);
   return (
     <div className="App">
-      <Nav />
-      <SearchBox handleSubmit={handleSubmit} />
+      <Header />
+      {/* <SearchBox handleSubmit={handleSubmit} /> */}
       <SliderHero />
       <MovieList movies={movies} />
       {totalResult > 20 ? (

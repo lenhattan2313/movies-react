@@ -17,7 +17,7 @@ function Pagination({ nextPage, currentPage, numberPage }) {
     let active = currentPage === i && "active";
     pageLinks.push(
       <li className={active} key={i} onClick={() => nextPage(i)}>
-        <a href="#">{i}</a>
+        {/* <a href="#">{i}</a> */}
       </li>
     );
   }
@@ -26,13 +26,13 @@ function Pagination({ nextPage, currentPage, numberPage }) {
       <ul>
         {currentPage > 1 && (
           <li onClick={() => nextPage(currentPage - 1)}>
-            <a href="#">Prev</a>
+            {/* <a href="#">Prev</a> */}
           </li>
         )}
         {pageLinks}
         {currentPage < numberPage && (
           <li onClick={() => nextPage(currentPage + 1)}>
-            <a href="#">Next</a>
+            {/* <a href="#">Next</a> */}
           </li>
         )}
       </ul>
