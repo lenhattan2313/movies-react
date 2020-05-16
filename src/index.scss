@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+@import "~bootstrap/scss/bootstrap";
 
 $font-primary: "Poppins", sans-serif;
 $font-secondary: "Luckiest Guy", cursive;
@@ -10,6 +11,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: $font-primary;
+  background: rgb(13, 13, 13);
 }
 a {
   text-decoration: none;

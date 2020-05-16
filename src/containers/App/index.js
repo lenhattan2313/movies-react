@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import Nav from "../../components/Nav";
 import SearchBox from "../../components/SearchBox";
 import { API_KEY } from "../../constant";
-import MovieList from "../../components/MovieList";
+import MovieList from "../MovieList";
 import Pagination from "../../components/Pagination";
 import SliderHero from "../SliderHero";
 import Header from "../../components/Header";
-
+import { Container } from "react-bootstrap";
 function App() {
   const [movies, setMovies] = useState([]);
   const [totalResult, setTotalResult] = useState(0);
@@ -46,19 +46,20 @@ function App() {
   }
   const numberPage = Math.ceil(totalResult / 20);
   return (
-    <div className="App">
+    <Container>
       <Header />
       {/* <SearchBox handleSubmit={handleSubmit} /> */}
       <SliderHero />
-      <MovieList movies={movies} />
-      {totalResult > 20 ? (
+      <MovieList />
+      {/* <MovieList movies={movies} /> */}
+      {/* {totalResult > 20 ? (
         <Pagination
           numberPage={numberPage}
           nextPage={nextPage}
           currentPage={currentPage}
         />
-      ) : null}
-    </div>
+      ) : null} */}
+    </Container>
   );
 }
 
