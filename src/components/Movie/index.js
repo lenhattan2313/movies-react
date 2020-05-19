@@ -8,7 +8,8 @@ Movie.defaultProps = {
   title: "",
 };
 
-function Movie({ title }) {
+function Movie({ title, topic }) {
+  console.log(topic);
   return (
     <div>
       <h2>{title}</h2>

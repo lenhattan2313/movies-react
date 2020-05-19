@@ -29,21 +29,21 @@ function App() {
     fetchData();
     setSearchTerm(value);
   }
-  function nextPage(pageNumber) {
-    async function fetchData() {
-      try {
-        const requestURL = `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=${searchTerm}&page=${pageNumber}`;
-        const response = await fetch(requestURL);
-        const responseJSON = await response.json();
-        const data = await responseJSON.results;
-        setMovies(data);
-        setCurrentPage(pageNumber);
-      } catch (error) {
-        console.log(error);
-      }
-    }
-    fetchData();
-  }
+  // function nextPage(pageNumber) {
+  //   async function fetchData() {
+  //     try {
+  //       const requestURL = `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=${searchTerm}&page=${pageNumber}`;
+  //       const response = await fetch(requestURL);
+  //       const responseJSON = await response.json();
+  //       const data = await responseJSON.results;
+  //       setMovies(data);
+  //       setCurrentPage(pageNumber);
+  //     } catch (error) {
+  //       console.log(error);
+  //     }
+  //   }
+  //   fetchData();
+  // }
   const numberPage = Math.ceil(totalResult / 20);
   return (
     <Container>
